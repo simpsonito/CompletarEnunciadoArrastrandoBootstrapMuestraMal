@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Actividad Arrastrar hacia la respuesta</title>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+    <link href="css/styles.css" rel="stylesheet" />
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body style="background-color:transparent;">
+    <section class="container">
+        <div id="main" class="row">
+
+            <div class="col-md-12">
+                <h1></h1>
+            </div>
+            <div class="col-md-12">
+                <div id="dialog" title="Mensaje">
+                    <p>&nbsp;</p>
+                </div>
+                <div class="dialog-background" id="retroPopUp" style="display: none;">
+                    <div class="dialog-loading-wrapper">
+                        <div class="dialog-loading-icon">
+                            <div id="botonCerrarRetro"></div>
+                            <div id="retroPopUpMensaje">
+                                <!-- Aquí se colocarán los mensajes de retroalimentación. -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--<p class="instrucciones">
+                    Arrastra el la respuesta al espacio correcto
+                </p>-->
+                <div class="respuestas">
+                        1.	La <div class="ui-widget-header droppable" data-respuesta="perspectiva científica"></div> se refiere al uso del derecho a partir del objeto de estudio de las diversas ciencias.<br>
+2.	El <div class="ui-widget-header droppable" data-respuesta="enfoque metodológico"></div> hace referencia al método utilizado para definir.<br>
+3.	La dimensión <div class="ui-widget-header droppable" data-respuesta="axiológica"></div> se encarga de estudiar los valores jurídicos.<br>
+4.	El problema de <div class="ui-widget-header droppable" data-respuesta="lenguaje"></div> se refiere al hecho de utilizar la palabra <em>derecho</em> arbitrariamente según las distintas relaciones sociales.<br>
+5.	La dimensión <div class="ui-widget-header droppable" data-respuesta="normativa"></div> se refleja en la realidad como el conjunto de normas coactivas que prescriben la conducta social.<br>
+6.	El <div class="ui-widget-header droppable" data-respuesta="convencionalismo verbal"></div> hace referencia a los acuerdos entre las personas para establecer una definición.<br>
+7.	El <div class="ui-widget-header droppable" data-respuesta="nivel de conocimiento"></div> se refiere a que el derecho tiene una definición específica, que dependerá del nivel que se utilice.<br>
+8.	El <div class="ui-widget-header droppable" data-respuesta="realismo verbal"></div> menciona que todas las cosas, objetos, situaciones, seres vivos y fenómenos poseen una característica especial que los hace ser únicos.<br>
+9.	La tesis de <div class="ui-widget-header droppable" data-respuesta="indefinición"></div> del derecho del jurista García Máynez menciona que no es posible asignar un género próximo ni una diferencia específica al derecho.<br>
+10. En la dimensión <div class="ui-widget-header droppable" data-respuesta="factica"></div> se menciona que el derecho se ve materializado en la realidad social al momento en que las personas interactúan entre sí.
+                </div>
+                <div class="preguntas">
+                    <div class="ui-widget-content draggable" data-respuesta="perspectiva científica">perspectiva científica</div>
+                    <div class="ui-widget-content draggable" data-respuesta="enfoque metodológico">enfoque metodológico</div>
+                    <div class="ui-widget-content draggable" data-respuesta="axiológica">axiológica</div>
+                    <div class="ui-widget-content draggable" data-respuesta="lenguaje">lenguaje</div>
+                    <div class="ui-widget-content draggable" data-respuesta="normativa">normativa</div>
+                    <div class="ui-widget-content draggable" data-respuesta="convencionalismo verbal">convencionalismo verbal</div>
+                    <div class="ui-widget-content draggable" data-respuesta="nivel de conocimiento">nivel de conocimiento</div>
+                    <div class="ui-widget-content draggable" data-respuesta="realismo verbal">realismo verbal</div>
+                    <div class="ui-widget-content draggable" data-respuesta="indefinición">indefinición</div>
+                    <div class="ui-widget-content draggable" data-respuesta="factica">fáctica</div>
+                </div>
+                <div class="barraInferior">
+                    <button id="btnRevisar">Revisar</button><button id="btnReiniciar">Reiniciar</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+</body>
+</html>

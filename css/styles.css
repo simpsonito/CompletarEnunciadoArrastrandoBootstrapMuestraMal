@@ -1,0 +1,61 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #666666;
+    line-height: 2.3em;
+}
+.preguntas{
+}
+.respuestas{
+    clear: both;
+}
+.draggable {
+    min-width: 90px;
+    min-height: 40px;
+    padding: 0.5em;
+    float: left;
+    margin: 10px;
+    text-align: center;
+}
+.draggable:hover{
+    cursor: pointer;
+    border: 1px solid black;
+}
+.droppable{
+    border-style: dashed;
+}
+.droppable {
+    width: 120px;
+    min-height: 40px;/*Basicamente aquí se da la altura del recuadro y de la línea*/
+    padding: 0.5em;
+    /*float: left;*/
+    margin: 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+div.ui-droppable-hover{/* estilo de un droppable cuando un draggable pasa sobre él */
+    background: white;
+    border: 1px solid #4a75ab
+}
+.barraInferior{
+    text-align: center;
+    clear: both;
+}
+.bien{
+    background: #eeffee url("palomita.png") no-repeat top right; 
+}
+.mal{
+    background: #ffeeee url("tache.png") no-repeat top right;
+}
+.retroIndividualFinal {
+    background: none repeat scroll 0 0 #FFEEEE;
+    opacity: 0.85;
+    top: -7px;
+    left: 100%;
+    position: absolute;
+    color: red;
+    line-height: 15px;
+    border: 1px solid #CCC;
+}
